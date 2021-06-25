@@ -30,7 +30,7 @@ Usage
 =====
 
 ```sh
-git clone https://github.com/cloud-org/beats-output-http-another.git && cd beats-output-http-another
+git clone https://github.com/cloud-org/beats-output-http-another.git && cd beats-output-http-another/cmd
 go mod tidy
 go build -o filebeat main.go
 ```
