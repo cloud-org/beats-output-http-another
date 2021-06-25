@@ -16,3 +16,7 @@
 
 #IDE ignore
 .idea
+
+cmd/filebeat
+
+go.sum

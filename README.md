@@ -1,6 +1,15 @@
-[![License](http://img.shields.io/badge/license-mit-blue.svg)](https://raw.githubusercontent.com/crazygreenpenguin/beats-output-http/master/LICENSE)
-[![Build Status](https://travis-ci.org/crazygreenpenguin/beats-output-http.svg?branch=master)](https://travis-ci.com/crazygreenpenguin/beats-output-http)
-[![Go Report Card](https://goreportcard.com/badge/github.com/crazygreenpenguin/beats-output-http)](https://goreportcard.com/report/github.com/crazygreenpenguin/beats-output-http)
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [beats-output-http](#beats-output-http)
+- [Compatibilities](#compatibilities)
+- [Attention](#attention)
+- [Usage](#usage)
+- [Plugin configuration](#plugin-configuration)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # beats-output-http
 HTTP output producer for the Elastic Beats framework
 beats-output-http. Output for the Elastic Beats platform that simply
@@ -20,27 +29,12 @@ Not using pre-release version! It's only for tests.
 Usage
 =====
 
-To add support for this output plugin to a beat, you
-have to import this plugin into your main beats package,
-like this:
-
+```sh
+git clone https://github.com/cloud-org/beats-output-http-another.git && cd beats-output-http-another
+go mod tidy
+go build -o filebeat main.go
 ```
-package main
 
-import (
-	"os"
-	_ "github.com/crazygreenpenguin/beats-output-http"
-	"github.com/elastic/beats/v7/filebeat/cmd"
-)
-
-
-func main() {
-	if err := cmd.RootCmd.Execute(); err != nil {
-		os.Exit(1)
-	}
-}
-```
-for filebeat it's be filebeat/main.go fo example
 
 Plugin configuration
 =====
